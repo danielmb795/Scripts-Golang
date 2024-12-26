@@ -19,6 +19,7 @@ func Secret(user, realm string) string{
 func main() {
 	if len(os.Args) != 3 {
 		fmt.Println("Uso: go run <Caminho Diretório> <porta>")
+		os.Exit(1)
 	}
 	httpdir := os.Args[1]
 	porta := os.Args[2]
